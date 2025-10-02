@@ -4,7 +4,7 @@ import sys
 CSI="\x1b[" # префикс ESC-последовательностей
 
 def loading(num_tasks):
-    bar_width = 51  # ширина прогресс-бара
+    bar_width = 31  # ширина прогресс-бара
     for k in range(1, num_tasks + 1):
         for pct in range(0, bar_width):
             filled = pct
