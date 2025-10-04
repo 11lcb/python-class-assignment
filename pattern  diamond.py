@@ -8,7 +8,7 @@ def draw_line(offset=0, lenght=1, color=88):
 
 import time
 def draw_diamond():
-    height = 11
+    height = 8
     center = height // 2
     offset = height // 2
     step = 1
@@ -31,6 +31,6 @@ def draw_diamond():
             print(f'\x1b[{offset}D')
             lenght = 1
             offset = height//2
-            time.sleep(0.5)
+            time.sleep(10)
       
 draw_diamond()
