@@ -15,7 +15,8 @@ def draw_function():
             else :
                 print(f'{"-"*length}')
                   
-draw_function()                     
+draw_function()
+                    
 
 
 

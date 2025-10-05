@@ -13,7 +13,7 @@ def draw_diamond():
     offset = height // 2
     step = 1
     lenght = 1
-    colors = [88, 157, 105]
+    colors = [88, 157, 105,16,17,18,19,20,21,23,24,25,26,27]
     
     
     while True :
@@ -31,6 +31,6 @@ def draw_diamond():
             print(f'\x1b[{offset}D')
             lenght = 1
             offset = height//2
-            time.sleep(10)
+            time.sleep(0.01)
       
 draw_diamond()
