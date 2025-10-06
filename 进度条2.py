@@ -7,7 +7,8 @@ def loading_multiple(m):
         for i in range(1, bar + 1):
             time.sleep(0.05)  
             percent = i * 100 // bar
-            L = "+" * i + "0" * (bar - i)
+            b=" "
+            L = b * i + "0" * (bar - i)
             sys.stdout.write(f'\rTask {p+1}/{m} [{L}] {percent:3d}%')
             sys.stdout.flush()
     

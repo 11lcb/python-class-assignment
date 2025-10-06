@@ -6,7 +6,7 @@ white='\u001b[47m'
 blue='\u001b[44m'
 a='\u001b[0m'
 
-NUMBER=input("\n  how long:")
+NUMBER=input("\n  how long about the flag :")
 n=int(NUMBER)
 
 line=' '*4
