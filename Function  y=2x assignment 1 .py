@@ -8,9 +8,7 @@ def draw_function():
     x_min , x_max = -10 , 10
     y_min , y_max = -10, 10
 
-    center_x_a = width_a //2
-    center_y_a = height_a // 2
-
+    
     for screen_y in range(height_a):
         line = ""
         math_y = y_max - (screen_y * (y_max - y_min))//(height_a-1)

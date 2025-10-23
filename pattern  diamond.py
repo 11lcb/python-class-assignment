@@ -2,7 +2,7 @@ import os
 if os.name=='nt':
     os.system('')
 
-def draw_line(offset=0, lenght=1, color=88):
+def draw_line(offset=0, lenght=1, color=884):
     line = ' ' * lenght
     print(f'{" " * offset}\x1b[48;5;{color}m{line}\x1b[0m')
 
@@ -29,8 +29,10 @@ def draw_diamond():
                     lenght -= step * 2
             print(f'\x1b[{height+2}A')
             print(f'\x1b[{offset}D')
+            
             lenght = 1
             offset = height//2
-            time.sleep(0.01)
+            time.sleep(0.1)
+           
       
 draw_diamond()

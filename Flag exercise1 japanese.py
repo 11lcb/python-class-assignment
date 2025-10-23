@@ -3,7 +3,7 @@ b='\u001b[41m'
 END='\u001b[0m'
 
 line=' '*4
-length=4
+length=9
 height=length
 print(f'{a}{line*(length*2-2)}{END}')
 for i in range(1,height):

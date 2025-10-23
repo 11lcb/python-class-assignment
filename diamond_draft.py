@@ -32,7 +32,7 @@ def draw_pattern():
                     offset -=1
                     length += step*2
                 time.sleep(0.05) 
-            print(f"\x1b[{offset*2+2}A")
+            print(f"\x1b[{height+2}A")
             print(f'\x1b[{offset}D')     
             length = height
             offset = height //2
