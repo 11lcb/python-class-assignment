@@ -60,7 +60,7 @@ def word_choose():
 
 WORD_TO_GUESS = word_choose()[:5]
 WORD_TO_SHOW = '*****'
-TURNS = 10
+TURNS = 20
 USED_LETTERS = ''
 
 window = tk.Tk()
@@ -91,6 +91,7 @@ btn_cancel.place(relx=0.55, rely=0.7)
 
 used_letters_label = tk.Label(window, text='Log:')
 used_letters_label.place(relx=0.5, rely=0.9, anchor='center')
+
 
 # label_text = tk.Label(window, text='Hello, ITMO!', font=('Verdana', 20), 
 #                       bg='red', fg='white')

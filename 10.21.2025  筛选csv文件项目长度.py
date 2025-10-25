@@ -12,8 +12,6 @@ with open('books.csv','r',encoding='cp1251') as file :
             print(f'title: {books_title}')
             row_length.append(books_title)
 
-print(f"numbers whose length of title is over 30:{len(row_length)}")        
-
-
+print(f"numbers whose length of title is over 30:{len(row_length)}")  
 
 
