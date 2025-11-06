@@ -60,7 +60,7 @@ def word_choose():
 
 WORD_TO_GUESS = word_choose()[:5]
 WORD_TO_SHOW = '*****'
-TURNS = 20
+TURNS = 4
 USED_LETTERS = ''
 
 window = tk.Tk()
