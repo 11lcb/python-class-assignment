@@ -12,11 +12,5 @@ with open ('books-en.csv','r',encoding='cp1251') as file:
             limitted_year.append(row)
          
     print(f"books_year to {int(asked_year)} , have {len(limitted_year)} books")
+
             
-
-        
-
-
-
-
-

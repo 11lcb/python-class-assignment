@@ -28,6 +28,7 @@ def window():
          "笑对每一天","每个人都值得被爱，包括你自己","会好的,会好起来的"
          ,"落日,晚霞，海鸥","去码头整点薯条","давай!","спокойная ночь"
          ,"光的方向","把发霉的情绪晒一晒","好想吃烤肉啊","明天完成ddl!"]
+
     select_char = random.choice(a)
 
     label = tk.Label(popup,text=f"{select_char}",bg=bg_color,
