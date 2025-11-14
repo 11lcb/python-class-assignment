@@ -1,10 +1,28 @@
 import tkinter as tk
-import PIL
+import random
 from PIL import Image
 from PIL import ImageTk
 from tkinter import simpledialog
 
 word = ""
+def punish():
+    popup_3 = tk.Toplevel(root)
+    class ImageViewer:
+        popup_3.title("惩罚！")   
+        image=Image.open('c.jpg')
+        photo_1= ImageTk.PhotoImage(image)
+        popup_bg = tk.Label(popup_3, image=photo_1)
+        popup_bg.place(x=0, y=0, relwidth=0.95, relheight=0.95)
+    screen_width = root.winfo_screenwidth()
+    screen_height = root.winfo_screenheight()
+    b = 400 
+    c = 400
+    x= random.randint(0,screen_width - b)
+    y= random.randint(0,screen_height - c)
+    popup_3.geometry(f'{b}x{c}+{x}+{y}')    
+    popup_3.after(100,punish)
+    popup_3.after(2000,popup_3.destroy)
+
 def warn():
     popup_1 = tk.Toplevel()
     class ImageViewer:
@@ -20,6 +38,11 @@ def warn():
     popup_button_2 = tk.Button(popup_1,text='错了哥，我错了',command = popup_1.destroy,
                                                                 font=("Arial",11,"bold"))
     popup_button_2.place(relx = 0.3, rely = 0.6)
+
+    popup_button_2 = tk.Button(popup_1,text='错了我也不改，嘿嘿！',command = punish,
+                                                                font=("Arial",10,"bold"))
+    popup_button_2.place(relx = 0.27, rely = 0.8)
+
 def change_letter(): 
     word_slove = simpledialog.askstring("密码", "输入5个字母:", 
                                  initialvalue="")

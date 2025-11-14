@@ -19,9 +19,11 @@ def password():
     pass_word = ""
     for i in range(3):
         asked_letter =random_letter()
-        pass_word.append(asked_letter)
+        #pass_word.append(asked_letter)    #字符串不能append!
+        pass_word += asked_letter
     asked_number = random_number()
-    pass_word.append(asked_number)
+    #pass_word.append(asked_number)
+    pass_word += asked_number
 
     part = random.choice(pass_word)
     print(part)
