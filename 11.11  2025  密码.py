@@ -36,7 +36,7 @@ def password():
 def surprise():
     popup_2 = tk.Toplevel(root)
     class ImageViewer:
-        popup_2.title("密钥")   
+        popup_2.title("彩蛋")   
         image=Image.open('a.jpg')
         photo_1= ImageTk.PhotoImage(image)
         popup_bg = tk.Label(popup_2, image=photo_1)
@@ -48,13 +48,10 @@ def surprise():
     x= random.randint(0,screen_width - b)
     y= random.randint(0,screen_height - c)
     popup_2.geometry(f'{b}x{c}+{x}+{y}')    
-    popup_2.after(500,surprise)
-    popup_2.after(4000,popup_2.destroy)
+    popup_2.after(100,surprise)
+    popup_2.after(2000,popup_2.destroy)
 
     
-    
-        
-
 def four_parts():
     final = []
     for i in range(4):

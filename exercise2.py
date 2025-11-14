@@ -1,25 +1,9 @@
-import random
-import tkinter as tk
-from tkinter import ttk
-from PIL import Image, ImageTk
+#print(ord('A')+20,ord('Z')-5)
+#print(chr(ord('A')+21),chr(ord('Z')-5))   #u vwxyz
 
-root = tk.Tk()
-def surprise():
-    popup_1 = tk.Toplevel(root)
-    
-    class ImageViewer:
-      
-            popup_1.title("彩蛋")
-            image = Image.open("a.jpg") 
-            photo = ImageTk.PhotoImage(image)
-            screen_width = root.winfo_screenwidth()
-            screen_height = root.winfo_screenheight()
-            b = 400 
-            c = 150
-            x= random.randint(0,screen_width - b)
-            y= random.randint(0,screen_height - c)
-            popup_1.geometry(f'{b}x{c}+{x}+{y}')
-            label_3 = tk.Label(popup_1, image=photo)
-            label_3.pack(padx=10, pady=10)
-    app = ImageViewer(root)
-surprise()
+a = input("s:")
+     
+if a.isalpha() and len(a)==5:  
+    print("right")
+else:
+    print("ppp")
