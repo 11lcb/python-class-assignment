@@ -53,7 +53,6 @@ def change_letter():
         for i in word:
             letters_1 = chr(ord(i)+3)
             part_2 += letters_1 
-
         part_3 = ''
         for i in word:
             if ord(i) <70:
@@ -83,7 +82,7 @@ def change_letter():
         popup_button = tk.Button(popup_2,text='关闭',command = popup_2.destroy,bg='pink',
                                                                 font=("Arial",11,"bold"))
         popup_button.place(relx = 0.7, rely = 0.8)
-
+        
     else:
         warn()
         print("好小子！")    
