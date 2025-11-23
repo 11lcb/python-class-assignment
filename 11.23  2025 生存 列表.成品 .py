@@ -85,7 +85,7 @@ def method():
 
     elif condition == '无事发生' :
         print(f'\n{blue}{"无事发生"}{a}')
-        #loading_multiple(2)
+        loading_multiple(2)
         print()
         for item in new_items:
             name,number,size,points = item
@@ -120,7 +120,7 @@ def method():
         print(f"{blue}你成功存活！！{a}")      
     print(f"{blue}THE END{a}")
 
-    
+
 def loading_multiple(m):
     bar = 30
     for p in range(m):
